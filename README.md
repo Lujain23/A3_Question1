@@ -4,7 +4,7 @@ COMP3005 Assignment 3 Question 1
 # Video Link:
 https://youtu.be/L25hWSC5YaE
 
-preferably to be ran with IntelliI IDEA.
+preferably to be ran with IntelliJ IDEA.
 
 # Files Included:
 1. COMP3005_A3 folder
