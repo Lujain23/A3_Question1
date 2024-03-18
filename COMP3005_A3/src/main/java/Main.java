@@ -108,12 +108,17 @@ public class Main {
 
         }
         catch (Exception e){
-            System.out.println(e);
+            if(e.getMessage().contains("No results were returned by the query.")){
+                //dont print it
+            }
+            else{
+                System.out.println(e);
+            }
         }
     }
 
 
-    //all my functions
+    //get all students function - prints out all students in the table
     public static void getAllStudents(){
         try{
             Statement statement = connection.createStatement();
@@ -142,6 +147,8 @@ public class Main {
         }
 
     }
+
+    //add student function - adds a new row to the table with data from arguments
     public static void addStudent(String first_name,String last_name,String email,String enrollment_date){
         try{
             Statement statement = connection.createStatement();
@@ -156,9 +163,16 @@ public class Main {
 
         }
         catch (Exception e){
-            System.out.println(e);
+            if(e.getMessage().contains("No results were returned by the query.")){
+                //dont print it
+            }
+            else{
+                System.out.println(e);
+            }
         }
     }
+
+    //update student email function - updates the student email with the new_email of student_id (the student's id)
     public static void updateStudentEmail(int student_id,String new_email){
 
         try{
@@ -170,9 +184,16 @@ public class Main {
 
         }
         catch (Exception e){
-            System.out.println(e);
+            if(e.getMessage().contains("No results were returned by the query.")){
+                //dont print it
+            }
+            else{
+                System.out.println(e);
+            }
         }
     }
+
+    //delete student function - deletes a specifc row where stutent id is equal to the one given
     public static void deleteStudent(int student_id){
 
         try{
@@ -184,10 +205,15 @@ public class Main {
 
         }
         catch (Exception e){
-            System.out.println(e);
+            if(e.getMessage().contains("No results were returned by the query.")){
+                //dont print it
+            }
+            else{
+                System.out.println(e);
+            }
         }
     }
 
 
 
-}//main
+}
