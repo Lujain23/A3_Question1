@@ -12,8 +12,8 @@ https://youtu.be/L25hWSC5YaE
 2. readme.txt
 
 # Setup Instructions:
-- In pgAdmin create a database with the name "COMP3005_A3_database"
-- In pgAdmin create a table with the name "students"
+- In pgAdmin create a database with the name _COMP3005_A3_database_
+- In pgAdmin create a table with the name _students_
 - Can populate the table with base information if needed.
 - In the code, ensure the password and user string have the correct password and user.
 
