@@ -24,7 +24,7 @@ public class Main {
             Class.forName("org.postgresql.Driver");
             connection = DriverManager.getConnection(url,user,password);
 
-            //checking if connection went ok
+            //checking if the connection went ok
             if (connection != null){
                 System.out.println("Connected To Database");
             }
@@ -121,6 +121,7 @@ public class Main {
 
             //now to print it out - done like the video
             ResultSet rs  = statement.getResultSet();
+            //print them in a good table
             while(rs.next()){
                 System.out.printf("%-5s%-10s%-10s%-30s%s%n",
                         rs.getInt("student_id"),
@@ -136,7 +137,7 @@ public class Main {
 
         }
         catch (Exception e){
-
+            System.out.println(e);
 
         }
 
@@ -155,7 +156,7 @@ public class Main {
 
         }
         catch (Exception e){
-
+            System.out.println(e);
         }
     }
     public static void updateStudentEmail(int student_id,String new_email){
@@ -169,7 +170,7 @@ public class Main {
 
         }
         catch (Exception e){
-
+            System.out.println(e);
         }
     }
     public static void deleteStudent(int student_id){
@@ -183,7 +184,7 @@ public class Main {
 
         }
         catch (Exception e){
-
+            System.out.println(e);
         }
     }
 
