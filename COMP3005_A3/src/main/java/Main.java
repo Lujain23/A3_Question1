@@ -48,11 +48,13 @@ public class Main {
                 switch(input){
                     //first function
                     case "1":
+                        
                         getAllStudents();
                         break;
 
                     //second function
                     case "2":
+                        
                         //get user input
                         System.out.println("Add student");
                         System.out.println("First name:");
@@ -69,6 +71,7 @@ public class Main {
 
                     //third function
                     case "3":
+                        
                         //get user input
                         System.out.println("Update email");
                         System.out.println("Student ID:");
@@ -83,6 +86,7 @@ public class Main {
 
                     //fourth function
                     case "4":
+                        
                         //get user input
                         System.out.println("Delete student");
                         System.out.println("Student ID:");
@@ -108,10 +112,7 @@ public class Main {
 
         }
         catch (Exception e){
-            if(e.getMessage().contains("No results were returned by the query.")){
-                //dont print it
-            }
-            else{
+           if(!e.getMessage().contains("No results were returned by the query.")){
                 System.out.println(e);
             }
         }
@@ -136,9 +137,7 @@ public class Main {
                         rs.getString("enrollment_date")
 
                         );
-
             }
-
 
         }
         catch (Exception e){
@@ -163,10 +162,7 @@ public class Main {
 
         }
         catch (Exception e){
-            if(e.getMessage().contains("No results were returned by the query.")){
-                //dont print it
-            }
-            else{
+           if(!e.getMessage().contains("No results were returned by the query.")){
                 System.out.println(e);
             }
         }
@@ -184,16 +180,13 @@ public class Main {
 
         }
         catch (Exception e){
-            if(e.getMessage().contains("No results were returned by the query.")){
-                //dont print it
-            }
-            else{
+           if(!e.getMessage().contains("No results were returned by the query.")){
                 System.out.println(e);
             }
         }
     }
 
-    //delete student function - deletes a specifc row where stutent id is equal to the one given
+    //delete student function - deletes a specific row where student id is equal to the one given
     public static void deleteStudent(int student_id){
 
         try{
@@ -205,10 +198,7 @@ public class Main {
 
         }
         catch (Exception e){
-            if(e.getMessage().contains("No results were returned by the query.")){
-                //dont print it
-            }
-            else{
+           if(!e.getMessage().contains("No results were returned by the query.")){
                 System.out.println(e);
             }
         }
