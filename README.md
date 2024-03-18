@@ -6,19 +6,18 @@ preferably to be run with IntelliJ IDEA.
 https://youtu.be/L25hWSC5YaE
 
 
-
 # Files Included:
 1. COMP3005_A3 folder
 2. readme.txt
+3. sql.sql
 
 # Setup Instructions:
 - In pgAdmin create a database with the name _COMP3005_A3_database_
-- In pgAdmin create a table with the name _students_
-- Can populate the table with base information if needed.
+- In pgAdmin use the _sql.sql_ file to create the table and populate it.
 - In the code, ensure the password and user string have the correct password and user.
 
 # How to run the application:
-- In github, the button where it says "code", click on drop-down and select _Download ZIP_
+- In GitHub, the button where it says "code", click on drop-down and select _Download ZIP_
 - Unzip the file in the directory you would like.
 - Open IntelliJ
 - Open a new project, and select "/A3_Question1-main/COMP3005_A3".
