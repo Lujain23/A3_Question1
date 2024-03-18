@@ -18,7 +18,7 @@ https://youtu.be/L25hWSC5YaE
 - In the code, ensure the password and user string have the correct password and user.
 
 # How to run the application:
-- The button where it says "code", click on drop-down and select _Download ZIP_
+- In github, the button where it says "code", click on drop-down and select _Download ZIP_
 - Unzip the file in the directory you would like.
 - Open IntelliJ
 - Open a new project, and select "/A3_Question1-main/COMP3005_A3".
